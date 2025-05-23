@@ -1,0 +1,76 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-left: 5px solid #0077ff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+.task-item span {
+  flex: 1;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-item button {
+  background-color: transparent;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  color: #cc0000;
+}
+
+/* 💻 Laptop */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .task-item span {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📲 Tablet */
+@media (max-width: 768px) and (min-width: 481px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item span {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .task-item button {
+    align-self: flex-end;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .task-item span {
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
+
+  .task-item button {
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+}
