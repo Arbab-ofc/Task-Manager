@@ -1,12 +1,61 @@
-# React + Vite
+# ✅ Task Manager - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive, and animated **Task Manager** web application built using **React JS**, **Vite**, **CSS Modules**, and **Framer Motion**. It allows users to add, complete, and delete tasks — with smooth animations and device-responsive UI (mobile, tablet, and desktop).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## Expanding the ESLint configuration
+![Task Manager Preview](public/screenshot.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Live-link
+https://task-manager-beryl-two.vercel.app/
+
+---
+
+## 🚀 Features
+
+- ✅ Add new tasks
+- ✅ Mark tasks as complete/incomplete
+- ✅ Delete tasks
+- ✅ Responsive layout (Mobile / Tablet / Laptop)
+- ✅ Modular component-based structure
+- ✅ Clean UI with CSS modules + media queries
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React JS (with Vite)
+- 🎨 CSS Modules
+- 📦 Framer Motion (for animation)
+- 📁 Context API (for global state)
+
+---
+
+## 📂 Folder Structure
+task-manager/
+│
+├── public/
+│   └── screenshot.png
+│
+├── src/
+│   ├── components/
+│   │   ├── TaskForm.jsx
+│   │   ├── TaskForm.css ✅
+│   │   ├── TaskList.jsx
+│   │   ├── TaskList.css ✅
+│   │   ├── TaskItem.jsx
+│   │   ├── TaskItem.css ✅
+│   │
+│   ├── context/
+│   │   └── TaskContext.jsx
+│
+│   ├── App.jsx
+│   ├── App.css ✅
+│   ├── main.jsx
+│
+├── index.css ✅
+├── README.md ✅
+├── package.json
+├── vite.config.js
